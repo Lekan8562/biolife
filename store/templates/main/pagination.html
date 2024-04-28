@@ -1,0 +1,14 @@
+<div class="biolife-panigations-block">
+                            <ul class="panigation-contain">
+                            {% if page.has_previous %}
+                            <li><a href="?page={{ page.previous_page_number }}" class="link-page next"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li>
+                            {% endif %}
+                                <li><span class="current-page">{{ page.number }}</span></li>
+                                <li><a href="#" class="link-page">7</a></li>
+                                <li><span class="sep">....</span></li>
+                                <li><a href="#" class="link-page">{{ page.paginator.num_pages }}</a></li>
+                              {% if page.has_next %}
+                                <li><a href="?page={{ page.next_page_number }}" class="link-page next"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+                              {% endif %}
+                            </ul>
+                        </div>
